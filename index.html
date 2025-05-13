@@ -11,16 +11,10 @@
 <body>
 
     <div class="container">
-        <div class="tabs">
-            <button class="button">Tab 1</button>
-            <button class="button">Tab 2</button>
-            <button class="button">Tab 3</button>
+        <div class="tabs"></div>
+        <div class="content"></div>
+    </div>
 
-        </div>
-
-        <div class="content">
-
-        </div>
     </div>
 
 
@@ -44,11 +38,20 @@
         }]
 
 
+        let content = document.querySelector('.content');
+        let tabContainer = document.querySelector('.tabs');
+
+
+        tabs.forEach( tab =>{
+            let button = document.createElement('button');
+            button.classList.add('button');
+            button.textContent = tab.name;
+            tabContainer.appendChild(button);
+        })
+        
+        
+        
     let buttons = document.querySelectorAll('.button');
-    let content = document.querySelector('.content');
-
-
-
     buttons.forEach((button) => {
 
         button.addEventListener('click', function () {
