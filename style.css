@@ -1,0 +1,32 @@
+.container {
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tabs {
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    border: none;
+
+}
+
+.active {
+    background-color: #e0e0e0;
+    border-bottom: 2px solid #007bff;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+}
